@@ -1,12 +1,16 @@
+"use client";
+
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { ArrowRight, Shield, TrendingUp, Users, Award, Star, CheckCircle } from "lucide-react"
 import { AuroraBackgroundDemo } from "@/components/background"
+import { useRouter } from "next/navigation"
 import Link from "next/link"
 import Image from "next/image"
 
 export default function HomePage() {
+  const router = useRouter();
   const services = [
     {
       icon: TrendingUp,
@@ -235,7 +239,7 @@ export default function HomePage() {
             Get personalized financial advice from our expert team. Schedule a free consultation today.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact">
+            <Link href="https://calendly.com/induswealthmanagement/30min">
               <Button size="lg" className="bg-gold-500 hover:bg-gold-600 text-black font-semibold px-8">
                 Schedule Consultation
               </Button>

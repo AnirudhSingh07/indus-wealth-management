@@ -85,51 +85,12 @@ export default function ContactPage() {
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="space-y-6">
-                    <div className="grid md:grid-cols-2 gap-6">
-                      <div className="space-y-2">
-                        <Label htmlFor="firstName">First Name *</Label>
-                        <Input id="firstName" placeholder="Enter your first name" />
-                      </div>
-                      <div className="space-y-2">
-                        <Label htmlFor="lastName">Last Name *</Label>
-                        <Input id="lastName" placeholder="Enter your last name" />
-                      </div>
-                    </div>
-
-                    <div className="space-y-2">
-                      <Label htmlFor="email">Email Address *</Label>
-                      <Input id="email" type="email" placeholder="Enter your email address" />
-                    </div>
-
-                    <div className="space-y-2">
-                      <Label htmlFor="phone">Phone Number *</Label>
-                      <Input id="phone" placeholder="Enter your phone number" />
-                    </div>
-
-                    <div className="space-y-2">
-                      <Label htmlFor="subject">Subject *</Label>
-                      <Input id="subject" placeholder="What is this regarding?" />
-                    </div>
-
-                    <div className="space-y-2">
-                      <Label htmlFor="message">Message *</Label>
-                      <Textarea id="message" placeholder="Tell us how we can help you..." rows={5} />
-                    </div>
-
-                    <div className="space-y-4">
-                      <div className="flex items-start space-x-2">
-                        <input type="checkbox" id="consent" className="mt-1" />
-                        <label htmlFor="consent" className="text-sm text-gray-600">
-                          I agree to receive communications from Indus Wealth Management and understand that I can
-                          unsubscribe at any time.
-                        </label>
-                      </div>
-                    </div>
-
-                    <Button className="w-full bg-blue-600 hover:bg-blue-700 py-3">
-                      <Send className="h-4 w-4 mr-2" />
-                      Send Message
-                    </Button>
+                    <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSdcRGQ595AkFwaCQjnK6qH2HBx_wJZUYV3_C66IQgixVP1vSA/viewform?embedded=true"
+          width="100%"
+          height="1165"
+          className="w-full"
+        ></iframe>
                   </CardContent>
                 </Card>
               </div>
