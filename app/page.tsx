@@ -234,7 +234,9 @@ export default function HomePage() {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
         <div className="container mx-auto px-4 text-center">
+          <Link href="https://calendly.com/induswealthmanagement/30min">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Start Your Investment Journey?</h2>
+          </Link>
           <p className="text-xl mb-8 text-blue-100 max-w-2xl mx-auto">
             Get personalized financial advice from our expert team. Schedule a free consultation today.
           </p>

@@ -45,7 +45,9 @@ export default function Header() {
           <div className="hidden md:flex items-center space-x-4">
             <div className="flex items-center text-gray-600 text-sm">
             </div>
+            <Link href="https://calendly.com/induswealthmanagement/30min">
             <Button className="bg-blue-600 hover:bg-blue-700">Get Started</Button>
+            </Link>
           </div>
 
           {/* Mobile Menu */}

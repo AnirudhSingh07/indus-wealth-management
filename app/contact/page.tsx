@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 import { MapPin, Phone, Mail, Clock, MessageSquare, Send } from "lucide-react"
+import Link from "next/link"
 
 export default function ContactPage() {
   const contactInfo = [
@@ -49,7 +50,7 @@ export default function ContactPage() {
   ]
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen ">
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-900 to-blue-700 text-white py-20">
         <div className="container mx-auto px-4">
@@ -68,71 +69,81 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Form & Info */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid lg:grid-cols-2 gap-12">
-              {/* Contact Form */}
-              <div>
-                <Card className="border-0 shadow-xl">
-                  <CardHeader>
-                    <CardTitle className="text-2xl font-bold text-gray-900 flex items-center">
-                      <MessageSquare className="h-6 w-6 mr-2 text-blue-600" />
-                      Send us a Message
-                    </CardTitle>
-                    <CardDescription>
-                      Fill out the form below and we'll get back to you within 24 hours.
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent className="space-y-6">
-                    <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLSdcRGQ595AkFwaCQjnK6qH2HBx_wJZUYV3_C66IQgixVP1vSA/viewform?embedded=true"
-          width="100%"
-          height="1165"
-          className="w-full"
-        ></iframe>
-                  </CardContent>
-                </Card>
+      <section className="py-12 md:py-16 lg:py-20">
+  <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="max-w-6xl mx-auto">
+      {/* Grid container with responsive columns */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-16">
+        
+        {/* Contact Form Section */}
+        <div>
+          <Card className="border-0 shadow-xl transition-all duration-300 hover:shadow-2xl">
+            <CardHeader>
+              <CardTitle className="text-xl md:text-2xl font-bold text-gray-900 flex items-center">
+                <MessageSquare className="h-5 md:h-6 w-5 md:w-6 mr-2 text-blue-600" />
+                Send us a Message
+              </CardTitle>
+              <CardDescription className="text-sm md:text-base">
+                Fill out the form below and we'll get back to you within 24 hours.
+              </CardDescription>
+            </CardHeader>
+            
+            {/* Responsive iframe container */}
+            <CardContent className="space-y-6">
+              <div className="relative aspect-[1/3] w-full overflow-hidden rounded-lg bg-gray-100">
+                <iframe
+                  src="https://docs.google.com/forms/d/e/1FAIpQLSdcRGQ595AkFwaCQjnK6qH2HBx_wJZUYV3_C66IQgixVP1vSA/viewform?embedded=true"
+                  className="absolute inset-0 w-full h-full border-none bg-white"
+                  
+                />
               </div>
+            </CardContent>
+          </Card>
+        </div>
 
-              {/* Contact Information */}
-              <div className="space-y-8">
-                <div>
-                  <h2 className="text-2xl font-bold text-gray-900 mb-6">Contact Information</h2>
-                  <p className="text-gray-600 mb-8 leading-relaxed">
-                    We're here to help you with all your financial planning needs. Reach out to us through any of the
-                    following channels.
-                  </p>
-                </div>
+        {/* Contact Information Section */}
+        <div className="space-y-6 md:space-y-8">
+          <div>
+            <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 md:mb-6">
+              Contact Information
+            </h2>
+            <p className="text-sm md:text-base text-gray-600 leading-relaxed">
+              We're here to help you with all your financial planning needs. Reach out to us through any of the
+              following channels.
+            </p>
+          </div>
 
-                <div className="space-y-6">
-                  {contactInfo.map((info, index) => (
-                    <Card key={index} className="border-l-4 border-l-blue-500 shadow-lg">
-                      <CardContent className="p-6">
-                        <div className="flex items-start">
-                          <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
-                            <info.icon className="h-6 w-6 text-blue-600" />
-                          </div>
-                          <div>
-                            <h3 className="font-semibold text-gray-900 mb-2">{info.title}</h3>
-                            <div className="space-y-1">
-                              {info.details.map((detail, detailIndex) => (
-                                <p key={detailIndex} className="text-gray-600 text-sm">
-                                  {detail}
-                                </p>
-                              ))}
-                            </div>
-                          </div>
-                        </div>
-                      </CardContent>
-                    </Card>
-                  ))}
-                </div>
-              </div>
-            </div>
+          <div className="space-y-4 md:space-y-6">
+            {contactInfo.map((info, index) => (
+              <Card 
+                key={index} 
+                className="border-l-4 border-l-blue-500 shadow-lg transition-all duration-300 hover:shadow-xl"
+              >
+                <CardContent className="p-4 md:p-6">
+                  <div className="flex items-start">
+                    <div className="w-10 md:w-12 h-10 md:h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                      <info.icon className="h-5 md:h-6 w-5 md:w-6 text-blue-600" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-gray-900 mb-2">{info.title}</h3>
+                      <div className="space-y-2 md:space-y-3">
+                        {info.details.map((detail, detailIndex) => (
+                          <p key={detailIndex} className="text-sm md:text-base text-gray-600">
+                            {detail}
+                          </p>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Office Locations */}
       {/* <section className="py-20 bg-gray-50">
@@ -204,9 +215,11 @@ export default function ContactPage() {
             Schedule a free consultation with our financial experts and take the first step towards achieving your
             financial goals.
           </p>
+          <Link href="https://calendly.com/induswealthmanagement/30min">
           <Button size="lg" className="bg-gold-500 hover:bg-gold-600 text-black font-semibold px-8">
             Schedule Free Consultation
           </Button>
+          </Link>
         </div>
       </section>
     </div>
