@@ -187,14 +187,8 @@ export default function ServicesPage() {
               <img src="/mu2.png" alt="" />
             </div>
           </div>
-           <div className="max-w-6xl mt-9 mx-auto">
-            <div className="grid md:grid-cols-1 gap-8">
-              <h3 className="text-2xl md:text-4xl mt-3 font-bold text-center text-blue-900 mb-4">AIF</h3>
-              <img src="/aif1.png" alt=""  />
-              <img src="/aif2.png" alt="" />
-            </div>
-          </div>
-           <div className="max-w-6xl mt-9 mx-auto items-center">
+
+          <div className="max-w-6xl mt-9 mx-auto items-center">
             <div className="grid md:grid-cols-1 gap-8">
               <h3 className="text-2xl md:text-4xl mt-3 font-bold text-center text-blue-900 mb-4">Life Insurance</h3>
               <img src="/li2.png" alt=""  />
@@ -206,6 +200,24 @@ export default function ServicesPage() {
               <img src="/hi2.png" alt=""  />
             </div>
           </div>
+          <div className="max-w-6xl mt-9 mx-auto">
+            <div className="grid md:grid-cols-1 gap-8">
+              <h3 className="text-2xl md:text-4xl mt-3 font-bold text-center text-blue-900 mb-4">PMS</h3>
+              <img src="/itus1.png" alt=""  />
+              <img src="/itus2.png" alt=""  />
+            </div>
+          </div>
+
+
+           <div className="max-w-6xl mt-9 mx-auto">
+            <div className="grid md:grid-cols-1 gap-8">
+              <h3 className="text-2xl md:text-4xl mt-3 font-bold text-center text-blue-900 mb-4">AIF</h3>
+              <img src="/aif1.png" alt=""  />
+              <img src="/aif2.png" alt="" />
+            </div>
+          </div>
+           
+          
           <div className="max-w-6xl mt-9 mx-auto">
             <div className="grid md:grid-cols-1 gap-8">
               <h3 className="text-2xl md:text-4xl mt-3 font-bold text-center text-blue-900 mb-4">Smallcase</h3>
