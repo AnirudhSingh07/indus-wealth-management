@@ -13,32 +13,27 @@ export default function ContactPage() {
       title: "Office Address",
       details: [
         "Indus Wealth Management Pvt. Ltd.",
-        "Tower A, 15th Floor",
-        "Business Park, Andheri East",
-        "Mumbai - 400069, Maharashtra",
+        "A -2/13 Mahananda Nagar, Ujjain",
+        "Ujjain - 456010, Madhya Pradesh",
       ],
     },
     {
       icon: Phone,
       title: "Phone Numbers",
-      details: ["+91 22 4567 8900 (Main)", "+91 98765 43210 (Mobile)", "1800-123-4567 (Toll Free)"],
+      details: ["+91 930 3312 930 (Main)"],
     },
     {
       icon: Mail,
       title: "Email Addresses",
       details: [
-        "info@induswealthmanagement.com",
-        "support@induswealthmanagement.com",
-        "careers@induswealthmanagement.com",
+        "induswealthmanagement@gmail.com",
       ],
     },
     {
       icon: Clock,
       title: "Business Hours",
       details: [
-        "Monday - Friday: 9:00 AM - 6:00 PM",
-        "Saturday: 9:00 AM - 2:00 PM",
-        "Sunday: Closed",
+        "Everyday : 9:00 AM - 9:00 PM",
         "Emergency Support: 24/7",
       ],
     },
@@ -46,22 +41,10 @@ export default function ContactPage() {
 
   const offices = [
     {
-      city: "Mumbai",
-      address: "Tower A, 15th Floor, Business Park, Andheri East, Mumbai - 400069",
-      phone: "+91 22 4567 8900",
+      city: "Ujjain",
+      address: "A- 2/13, Mahanada Nagar, Ujjain (M.P)",
+      phone: "+91 9303312930",
       email: "mumbai@induswealthmanagement.com",
-    },
-    {
-      city: "Delhi",
-      address: "Plot No. 123, Sector 44, Gurgaon, Haryana - 122003",
-      phone: "+91 124 456 7890",
-      email: "delhi@induswealthmanagement.com",
-    },
-    {
-      city: "Bangalore",
-      address: "5th Floor, Tech Park, Electronic City, Bangalore - 560100",
-      phone: "+91 80 2345 6789",
-      email: "bangalore@induswealthmanagement.com",
     },
   ]
 
@@ -191,7 +174,7 @@ export default function ContactPage() {
       </section>
 
       {/* Office Locations */}
-      <section className="py-20 bg-gray-50">
+      {/* <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Office Locations</h2>
@@ -228,10 +211,10 @@ export default function ContactPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Map Section */}
-      <section className="py-20">
+      {/* <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Find Us on Map</h2>
@@ -250,7 +233,7 @@ export default function ContactPage() {
             </Card>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white">

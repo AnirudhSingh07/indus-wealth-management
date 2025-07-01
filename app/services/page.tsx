@@ -13,12 +13,11 @@ export default function ServicesPage() {
       description: "Comprehensive financial planning to help you achieve your life goals.",
       features: [
         "Goal-based financial planning",
-        "Cash flow analysis",
         "Risk assessment",
         "Investment strategy development",
         "Regular portfolio reviews",
       ],
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/finplan.jpg?height=300&width=400",
     },
     {
       icon: BarChart3,
@@ -31,7 +30,7 @@ export default function ServicesPage() {
         "Performance monitoring",
         "Tax-efficient investing",
       ],
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/mf.jpg?height=300&width=400",
     },
     {
       icon: Shield,
@@ -40,11 +39,10 @@ export default function ServicesPage() {
       features: [
         "Life insurance planning",
         "Health insurance advisory",
-        "Term vs. endowment analysis",
         "Claims assistance",
         "Insurance portfolio review",
       ],
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/insu.jpg?height=300&width=400",
     },
     {
       icon: PiggyBank,
@@ -57,7 +55,7 @@ export default function ServicesPage() {
         "Social security optimization",
         "Estate planning basics",
       ],
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/ret.jpg?height=300&width=400",
     },
     {
       icon: FileText,
@@ -70,7 +68,7 @@ export default function ServicesPage() {
         "Rebalancing recommendations",
         "Quarterly review meetings",
       ],
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/port.jpg?height=300&width=400",
     },
   ]
 
@@ -176,34 +174,52 @@ export default function ServicesPage() {
       </section>
 
       {/* Process Section */}
-      <section className="py-20 bg-gray-50">
+   <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Process</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              A systematic approach to help you achieve your financial goals.
-            </p>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Unlock Unlimited Opportunities With Multiple Products</h2>
           </div>
 
           <div className="max-w-6xl mx-auto">
-            <div className="grid md:grid-cols-5 gap-8">
-              {process.map((step, index) => (
-                <div key={index} className="text-center relative">
-                  <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
-                    {step.step}
-                  </div>
-                  <h3 className="text-lg font-bold text-gray-900 mb-3">{step.title}</h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">{step.description}</p>
-
-                  {index < process.length - 1 && (
-                    <div className="hidden md:block absolute top-8 left-full w-full h-0.5 bg-blue-200 -translate-x-1/2"></div>
-                  )}
-                </div>
-              ))}
+            <div className="grid md:grid-cols-1 gap-8">
+              <h3 className="text-2xl md:text-4xl font-bold text-center text-blue-900 mb-4">Mutual Funds</h3>
+              <img src="/mu1.png" alt=""  />
+              <img src="/mu2.png" alt="" />
+            </div>
+          </div>
+           <div className="max-w-6xl mt-9 mx-auto">
+            <div className="grid md:grid-cols-1 gap-8">
+              <h3 className="text-2xl md:text-4xl mt-3 font-bold text-center text-blue-900 mb-4">AIF</h3>
+              <img src="/aif1.png" alt=""  />
+              <img src="/aif2.png" alt="" />
+            </div>
+          </div>
+           <div className="max-w-6xl mt-9 mx-auto items-center">
+            <div className="grid md:grid-cols-1 gap-8">
+              <h3 className="text-2xl md:text-4xl mt-3 font-bold text-center text-blue-900 mb-4">Life Insurance</h3>
+              <img src="/li2.png" alt=""  />
+            </div>
+          </div>
+          <div className="max-w-6xl mt-9 mx-auto">
+            <div className="grid md:grid-cols-1 gap-8">
+              <h3 className="text-2xl md:text-4xl mt-3 font-bold text-center text-blue-900 mb-4">Health & General Insurance</h3>
+              <img src="/hi2.png" alt=""  />
+            </div>
+          </div>
+          <div className="max-w-6xl mt-9 mx-auto">
+            <div className="grid md:grid-cols-1 gap-8">
+              <h3 className="text-2xl md:text-4xl mt-3 font-bold text-center text-blue-900 mb-4">Smallcase</h3>
+              <img src="/sc2.png" alt=""  />
+            </div>
+          </div>
+          <div className="max-w-6xl mt-9 mx-auto">
+            <div className="grid md:grid-cols-1 gap-8">
+              <h3 className="text-2xl md:text-4xl mt-3 font-bold text-center text-blue-900 mb-4">Fixed Deposit</h3>
+              <img src="/fd2.png" alt=""  />
             </div>
           </div>
         </div>
-      </section>
+      </section> 
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white">

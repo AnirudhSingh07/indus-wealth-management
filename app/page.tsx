@@ -125,7 +125,7 @@ export default function HomePage() {
                   commitment to client success.
                 </p>
 
-                <div className="space-y-4">
+                {/* <div className="space-y-4">
                   {[
                     "SEBI Registered Investment Advisors",
                     "Transparent Fee Structure",
@@ -137,7 +137,7 @@ export default function HomePage() {
                       <span className="text-gray-700">{feature}</span>
                     </div>
                   ))}
-                </div>
+                </div> */}
               </div>
 
               <div className="relative">
@@ -162,7 +162,7 @@ export default function HomePage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Comprehensive financial solutions designed to meet your unique needs and goals.
+              Comprehensive solutions designed to meet your financial goals.
             </p>
           </div>
 

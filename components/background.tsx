@@ -20,7 +20,7 @@ export function AuroraBackgroundDemo() {
         className="relative flex flex-col gap-4 items-center justify-center px-4"
       >
          <Badge className="mb-6 bg-gold-500/20 text-gold-300 border-gold-400/30 hover:bg-gold-500/30">
-              Trusted Financial Partner
+              Trusted Investing Partner
             </Badge>
         <div className="text-3xl md:text-6xl font-bold text-white text-center">
           Simplyfying Wealth

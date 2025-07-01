@@ -25,6 +25,7 @@ export default function Header() {
           <Link href="/" className="flex items-center space-x-2">
             
             <img src="/iwm-head.png" className="h-16 w-16" />
+            <h1 className="font-light p-1 text-xl text-blue-500">INDUS WEALTH MANAGEMENT</h1>
           </Link>
 
           {/* Desktop Navigation */}
@@ -57,13 +58,12 @@ export default function Header() {
             <SheetContent side="right" className="w-80">
               <div className="flex items-center justify-between mb-8">
                 <Link href="/" className="flex items-center space-x-2">
-                  <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg flex items-center justify-center">
-                    <span className="text-white font-bold">IW</span>
-                  </div>
-                  <div>
+                  <img src="/iwm-head.png" className="h-16 w-16" />
+                  <h1 className="font-light p-1 text-xs -mt-1 text-blue-500">INDUS WEALTH MANAGEMENT</h1>
+                  {/* <div>
                     <div className="font-bold text-gray-900">Indus Wealth</div>
                     <div className="text-xs text-gray-600 -mt-1">Management</div>
-                  </div>
+                  </div> */}
                 </Link>
                 <Button variant="ghost" size="sm" onClick={() => setIsOpen(false)}>
                   <X className="h-6 w-6" />

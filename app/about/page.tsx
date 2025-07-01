@@ -30,10 +30,7 @@ export default function AboutPage() {
   ]
 
   const whyChooseUs = [
-    {
-      title: "SEBI Registered",
-      description: "We are registered with SEBI as Investment Advisors, ensuring regulatory compliance.",
-    },
+   
     {
       title: "Experienced Team",
       description: "Our team has over 15 years of combined experience in financial markets.",
@@ -59,7 +56,7 @@ export default function AboutPage() {
   const team = [
     {
       name: "Jatin Sahijwani",
-      experience: "4+ years experience in Technical Field",
+      experience: "2+ years experience in Technical Field",
       image: "/jatinbhai.png?height=300&width=300",
       
     },
@@ -70,7 +67,7 @@ export default function AboutPage() {
     },
     {
       name: "Anirudh Singh Chouhan",
-      experience: "3+ years experience in FinTech",
+      experience: "2+ years experience in FinTech",
       image: "/anirudh.png?height=300&width=300",
     },
   ]
@@ -173,7 +170,7 @@ Smart Planning. Secure Future. Indus Wealth Management.
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-20">
+      {/* <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose Indus Wealth Management?</h2>
@@ -198,7 +195,7 @@ Smart Planning. Secure Future. Indus Wealth Management.
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Team Section */}
       <section className="py-20 bg-gray-50">
