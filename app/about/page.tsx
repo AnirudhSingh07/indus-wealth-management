@@ -59,12 +59,13 @@ export default function AboutPage() {
       experience: "2+ years experience in Technical Field",
       image: "/jatinbhai.png?height=300&width=300",
       
-    },
-    {
-      name: "Ranaditya Singh Shekhawat",
-      experience: "7+ years experience in Financial Market",
-      image: "/shanidada2.png?height=300&width=300",
-    },
+    }
+    ,
+    // {
+    //   name: "Ranaditya Singh Shekhawat",
+    //   experience: "7+ years experience in Financial Market",
+    //   image: "/shanidada2.png?height=300&width=300",
+    // },
     {
       name: "Anirudh Singh Chouhan",
       experience: "2+ years experience in FinTech",
