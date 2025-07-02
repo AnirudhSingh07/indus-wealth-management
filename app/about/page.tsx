@@ -55,7 +55,7 @@ export default function AboutPage() {
 
   const team = [
     {
-      name: "Jatin Sahijwani",
+      name: "Mr. Jatin Sahijwani",
       // experience: "2+ years experience in Technical Field",
       image: "/jatinbhai.png?height=300&width=300",
       
@@ -67,7 +67,7 @@ export default function AboutPage() {
     //   image: "/shanidada2.png?height=300&width=300",
     // },
     {
-      name: "Anirudh Singh Chouhan",
+      name: "Mr. Anirudh Singh Chouhan",
       // experience: "2+ years experience in FinTech",
       image: "/anirudh.png?height=300&width=300",
     },
@@ -199,7 +199,7 @@ Smart Planning. Secure Future. Indus Wealth Management.
       </section> */}
 
       {/* Team Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-50 items-center align-center">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Meet Our Team</h2>
@@ -208,7 +208,7 @@ Smart Planning. Secure Future. Indus Wealth Management.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl items-center mx-auto">
             {team.map((member, index) => (
               <Card
                 key={index}
