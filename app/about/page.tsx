@@ -225,9 +225,9 @@ Smart Planning. Secure Future. Indus Wealth Management.
                     />
                   </div>
                   <CardTitle className="text-xl font-bold text-gray-900">{member.name}</CardTitle>
-                  <Badge variant="secondary" className="mt-2">
+                  {/* <Badge variant="secondary" className="mt-2">
                     {member.experience}
-                  </Badge>
+                  </Badge> */}
                 </CardHeader>
                 <CardContent>
                 </CardContent>
