@@ -56,7 +56,7 @@ export default function AboutPage() {
   const team = [
     {
       name: "Jatin Sahijwani",
-      experience: "2+ years experience in Technical Field",
+      // experience: "2+ years experience in Technical Field",
       image: "/jatinbhai.png?height=300&width=300",
       
     }
@@ -68,7 +68,7 @@ export default function AboutPage() {
     // },
     {
       name: "Anirudh Singh Chouhan",
-      experience: "2+ years experience in FinTech",
+      // experience: "2+ years experience in FinTech",
       image: "/anirudh.png?height=300&width=300",
     },
   ]
