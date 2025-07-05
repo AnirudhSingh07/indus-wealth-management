@@ -89,7 +89,9 @@ export default function Header() {
                 <div className="flex items-center text-gray-600 text-sm">
                   
                 </div>
+                <Link href="https://calendly.com/induswealthmanagement/30min">
                 <Button className="w-full bg-blue-600 hover:bg-blue-700">Get Started</Button>
+                </Link>
               </div>
             </SheetContent>
           </Sheet>

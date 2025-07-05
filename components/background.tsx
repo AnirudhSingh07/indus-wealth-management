@@ -6,6 +6,7 @@ import { AuroraBackground } from "@/components/ui/aurora-background";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 import { ArrowRight, Shield, TrendingUp, Users, Award, Star, CheckCircle } from "lucide-react"
+import Link from "next/link";
 export function AuroraBackgroundDemo() {
   return (
     <AuroraBackground>
@@ -32,10 +33,12 @@ export function AuroraBackgroundDemo() {
             Your one-stop solution for financial planning, investments, and wealth management services. Build a secure financial future with expert guidance.
         </div>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Link href="https://calendly.com/induswealthmanagement/30min">
               <Button size="lg" className="bg-gold-500 hover:bg-gold-600 text-black font-semibold px-8 py-3">
                 Start Your Journey
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
+              </Link>
               
             </div>
         
